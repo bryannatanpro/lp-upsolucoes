@@ -1,0 +1,808 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="robots" content="noindex, nofollow" />
+<title>Up Soluções | Câmeras por Assinatura em Campo Bom</title>
+<link rel="icon" type="image/png" href="logo.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+
+<!-- Meta Pixel -->
+<script>
+  !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+  n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+  document,'script','https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', 'SEU_PIXEL_ID_AQUI');
+  fbq('track', 'PageView');
+</script>
+<noscript>
+  <img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=SEU_PIXEL_ID_AQUI&ev=PageView&noscript=1"/>
+</noscript>
+<!-- Fim Meta Pixel -->
+
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --bg: #0A0F1E;
+    --bg-alt: #0F1729;
+    --card: #131C33;
+    --card-light: #1A2540;
+    --border: #253355;
+    --blue: #2F6BFF;
+    --blue-light: #5B8CFF;
+    --lime: #A4D233;
+    --green: #25D366;
+    --text: #E8ECF7;
+    --text-muted: #93A0C2;
+    --white: #ffffff;
+    --danger-bg: #2A1414;
+    --danger-text: #FF8A8A;
+  }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: 'Poppins', sans-serif;
+    background:
+      radial-gradient(circle, rgba(91,140,255,0.12) 1px, transparent 1.5px) 0 0/26px 26px,
+      var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 560px; margin: 0 auto; padding: 0 20px; }
+  img { max-width: 100%; display: block; }
+
+  /* ── Hero ── */
+  .hero {
+    padding: 36px 20px 28px;
+    background:
+      radial-gradient(circle at 50% 0%, rgba(47,107,255,0.18), transparent 60%),
+      radial-gradient(circle, rgba(91,140,255,0.12) 1px, transparent 1.5px) 0 0/26px 26px,
+      var(--bg);
+    text-align: center;
+  }
+  .eyebrow {
+    display: inline-flex; align-items: center; gap: 7px;
+    background: rgba(164,210,51,0.12); border: 1px solid rgba(164,210,51,0.35);
+    color: var(--lime); font-size: 12px; font-weight: 600;
+    letter-spacing: .5px; text-transform: uppercase;
+    padding: 6px 14px; border-radius: 99px; margin-bottom: 18px;
+  }
+  .eyebrow::before {
+    content: ''; width: 6px; height: 6px; border-radius: 50%; background: var(--lime); flex-shrink: 0;
+    animation: pulse-dot 2s infinite;
+  }
+  @keyframes pulse-dot {
+    0% { box-shadow: 0 0 0 0 rgba(164,210,51,0.55); }
+    70% { box-shadow: 0 0 0 7px rgba(164,210,51,0); }
+    100% { box-shadow: 0 0 0 0 rgba(164,210,51,0); }
+  }
+  h1 {
+    font-size: 27px; font-weight: 800; color: #fff; line-height: 1.28;
+    margin-bottom: 12px; letter-spacing: -.3px;
+  }
+  h1 .accent { color: var(--blue-light); }
+  .hero-sub {
+    font-size: 15.5px; font-weight: 600; color: var(--text); margin-bottom: 10px;
+  }
+  .hero-desc {
+    font-size: 14px; color: var(--text-muted); max-width: 440px; margin: 0 auto 26px;
+  }
+  .hero-cta-note { font-size: 12.5px; color: var(--text-muted); margin-top: 10px; }
+
+  /* Feature pills row under hero */
+  .pill-row {
+    display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; margin-bottom: 8px;
+  }
+  .pill {
+    display: flex; align-items: center; gap: 4.6px;
+    background: var(--card); border: 1px solid var(--border);
+    color: var(--text); font-size: 9.2px; font-weight: 500;
+    padding: 5.75px 9.8px; border-radius: 99px;
+    transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease;
+  }
+  .pill:hover {
+    transform: translateY(-3px) scale(1.04);
+    border-color: var(--lime);
+    box-shadow: 0 10px 24px rgba(164,210,51,0.25);
+  }
+  .pill .dot { width: 4.6px; height: 4.6px; border-radius: 50%; background: var(--lime); flex-shrink: 0; }
+
+  /* ── Buttons ── */
+  .btn-whatsapp {
+    display: flex; align-items: center; justify-content: center; gap: 10px;
+    width: 100%; background: var(--green); color: #fff;
+    font-family: 'Poppins', sans-serif; font-size: 15.5px; font-weight: 700;
+    padding: 16px 22px; border: none; border-radius: 13px; cursor: pointer;
+    text-decoration: none; transition: transform .15s, background .2s;
+    box-shadow: 0 10px 30px rgba(37,211,102,0.25);
+  }
+  .btn-whatsapp:hover { background: #1ebe5a; transform: translateY(-2px); box-shadow: 0 14px 34px rgba(37,211,102,0.4); }
+  .btn-whatsapp:active { transform: translateY(0); }
+  @keyframes btn-pulse-glow {
+    0%, 100% { box-shadow: 0 10px 30px rgba(37,211,102,0.25); }
+    50% { box-shadow: 0 10px 42px rgba(37,211,102,0.6); }
+  }
+  #btnWhatsappHero, #btnWhatsappFinal { animation: btn-pulse-glow 2.8s ease-in-out infinite; }
+  #btnWhatsappHero:hover, #btnWhatsappFinal:hover { animation-play-state: paused; }
+  .btn-secondary {
+    display: block; text-align: center; width: 100%;
+    background: transparent; color: var(--blue-light);
+    border: 1.5px solid var(--border); border-radius: 13px;
+    padding: 13px; font-size: 14px; font-weight: 600;
+    font-family: 'Poppins', sans-serif; cursor: pointer; margin-top: 10px;
+  }
+
+  /* ── Section generic ── */
+  section { padding: 40px 0; }
+  .section-alt { background: #FFFFFF; }
+  .kicker {
+    font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 1.2px;
+    color: var(--blue-light); text-align: center; margin-bottom: 10px;
+  }
+  h2 {
+    font-size: 21px; font-weight: 800; color: #fff; text-align: center;
+    line-height: 1.35; margin-bottom: 14px; letter-spacing: -.2px;
+  }
+  .section-desc {
+    font-size: 14px; color: var(--text-muted); text-align: center; max-width: 460px;
+    margin: 0 auto 28px;
+  }
+
+  /* Text on white (.section-alt / .final-cta) sections — no dark box behind these, so switch to blue for contrast */
+  .section-alt .kicker, .final-cta .kicker { color: #1B3E9E; }
+  .section-alt h2, .final-cta h2 { color: var(--blue); }
+  .section-alt .section-desc, .final-cta .section-desc { color: #3D4B6B; }
+
+  /* ── Problem cards ── */
+  .problem-card {
+    background: var(--card); border: 1px solid var(--border); border-radius: 16px;
+    padding: 20px; margin-bottom: 14px;
+  }
+  .problem-card .tag {
+    display: inline-block; font-size: 11px; font-weight: 700; text-transform: uppercase;
+    letter-spacing: .6px; padding: 4px 10px; border-radius: 99px; margin-bottom: 12px;
+  }
+  .tag-red { background: var(--danger-bg); color: var(--danger-text); }
+  .tag-amber { background: #2A2414; color: #FFC966; }
+  .problem-card h3 { font-size: 15.5px; font-weight: 700; color: #fff; margin-bottom: 8px; }
+  .problem-card p { font-size: 13.5px; color: var(--text-muted); }
+  .problem-card ul { list-style: none; margin-top: 10px; display: flex; flex-direction: column; gap: 6px; }
+  .problem-card ul li { font-size: 13px; color: var(--text-muted); display: flex; gap: 8px; }
+  .problem-card ul li::before { content: '—'; color: #4A5A85; flex-shrink: 0; }
+
+  /* ── Solution flow ── */
+  .flow { display: flex; flex-direction: column; gap: 14px; }
+  .flow-step {
+    display: flex; gap: 16px; background: var(--card); border: 1px solid var(--border);
+    border-radius: 16px; padding: 18px;
+  }
+  .flow-num {
+    flex-shrink: 0; width: 40px; height: 40px; border-radius: 12px;
+    background: linear-gradient(135deg, var(--blue), #1B3E9E);
+    display: flex; align-items: center; justify-content: center;
+    font-weight: 800; font-size: 16px; color: #fff;
+    transition: transform .35s ease, box-shadow .35s ease;
+  }
+  .flow-step:hover .flow-num { transform: scale(1.12) rotate(-6deg); box-shadow: 0 0 0 6px rgba(47,107,255,0.15); }
+  .flow-step h3 { font-size: 15px; font-weight: 700; color: #fff; margin-bottom: 5px; }
+  .flow-step p { font-size: 13.5px; color: var(--text-muted); }
+  .flow-connector { width: 2px; height: 14px; background: var(--border); margin-left: 20px; }
+
+  /* ── Showcase carousel ── */
+  .showcase-track {
+    display: flex; overflow-x: auto; scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch; scrollbar-width: none; border-radius: 16px;
+  }
+  .showcase-track::-webkit-scrollbar { display: none; }
+  .showcase-slide {
+    flex: 0 0 100%; scroll-snap-align: center; border-radius: 16px; overflow: hidden;
+    border: 1px solid var(--border);
+  }
+  .showcase-slide img { width: 100%; display: block; aspect-ratio: 1866 / 843; object-fit: cover; }
+  .showcase-dots { display: flex; justify-content: center; gap: 6px; margin-top: 12px; }
+  .showcase-dots .dot { width: 7px; height: 7px; border-radius: 50%; background: var(--border); transition: background .3s; }
+  .showcase-dots .dot.active { background: var(--lime); }
+
+  /* ── Grid features (app / benefits) ── */
+  .feature-grid { display: flex; flex-direction: column; gap: 10px; }
+  .feature-item {
+    display: flex; align-items: flex-start; gap: 12px; background: var(--card);
+    border: 1px solid var(--border); border-radius: 14px; padding: 14px 16px;
+  }
+  .feature-item .icon {
+    flex-shrink: 0; width: 30px; height: 30px; border-radius: 9px;
+    background: rgba(47,107,255,0.15); color: var(--blue-light);
+    display: flex; align-items: center; justify-content: center; font-size: 14px; font-weight: 700;
+    transition: transform .3s ease, background .3s ease, color .3s ease;
+  }
+  .feature-item:hover .icon { transform: scale(1.15); background: var(--lime); color: #0A0F1E; }
+  .feature-item p { font-size: 13.5px; color: var(--text); font-weight: 500; }
+
+  /* ── Profiles (tabs style, stacked) ── */
+  .profile-card {
+    background: var(--card); border: 1px solid var(--border); border-radius: 16px;
+    padding: 20px; margin-bottom: 14px;
+  }
+  .profile-card .badge-num {
+    display: inline-flex; align-items: center; gap: 8px; background: rgba(47,107,255,0.12);
+    color: var(--blue-light); font-size: 12px; font-weight: 700; padding: 5px 12px;
+    border-radius: 99px; margin-bottom: 12px;
+  }
+  .profile-card h3 { font-size: 16px; font-weight: 700; color: #fff; margin-bottom: 10px; }
+  .check-list { list-style: none; display: flex; flex-direction: column; gap: 8px; }
+  .check-list li { font-size: 13.5px; color: var(--text-muted); display: flex; gap: 10px; align-items: flex-start; }
+  .check-list li::before {
+    content: '\2713'; flex-shrink: 0; width: 18px; height: 18px; border-radius: 50%;
+    background: var(--lime); color: #0A0F1E; font-size: 10px; font-weight: 700;
+    display: flex; align-items: center; justify-content: center; margin-top: 2px;
+  }
+
+  /* ── Comparativo ── */
+  .compare-wrap { display: flex; flex-direction: column; gap: 10px; }
+  .compare-card {
+    background: var(--card); border: 1px solid var(--border); border-radius: 16px;
+    padding: 22px 20px; text-align: center;
+  }
+  .compare-card.compare-new { border-color: var(--lime); box-shadow: 0 0 0 1px var(--lime), 0 16px 40px rgba(164,210,51,0.14); }
+  .compare-label {
+    display: inline-block; font-size: 11px; font-weight: 700; text-transform: uppercase;
+    letter-spacing: .6px; color: var(--text-muted); margin-bottom: 10px;
+  }
+  .compare-card.compare-new .compare-label { color: var(--lime); }
+  .compare-value { font-size: 23px; font-weight: 800; color: #fff; margin-bottom: 8px; line-height: 1.25; }
+  .compare-card.compare-new .compare-value { color: var(--lime); }
+  .compare-sub { font-size: 13px; color: var(--text-muted); }
+  .compare-vs {
+    text-align: center; font-size: 12px; font-weight: 800; letter-spacing: 1.5px;
+    color: #1B3E9E; margin: 2px 0;
+  }
+
+  /* ── Video ── */
+  .video-wrap {
+    position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;
+    border-radius: 16px; border: 1px solid var(--border); margin-top: 8px;
+  }
+  .video-wrap iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0; }
+
+  /* ── Plans ── */
+  .plan-card {
+    background: #FFFFFF; border: 1.5px solid #E3E8F2; border-radius: 18px;
+    padding: 24px 20px 66px; margin-bottom: 54px; position: relative;
+  }
+  .plan-card.featured { border-color: var(--blue); box-shadow: 0 0 0 1px var(--blue), 0 16px 40px rgba(47,107,255,0.18); }
+  .plan-badge {
+    position: absolute; top: -12px; left: 50%; transform: translateX(-50%);
+    background: var(--lime); color: #0A0F1E; font-size: 11px; font-weight: 700;
+    padding: 4px 14px; border-radius: 99px; letter-spacing: .4px; white-space: nowrap;
+  }
+  .plan-name { font-size: 17px; font-weight: 800; color: #0A0F1E; text-align: center; margin-bottom: 4px; }
+  .plan-for {
+    display: block; width: fit-content;
+    background: rgba(47,107,255,0.10); color: var(--blue);
+    font-size: 11.5px; font-weight: 700; text-align: center;
+    padding: 5px 14px; border-radius: 99px; margin: 0 auto 18px;
+  }
+  .plan-card .check-list { margin-bottom: 4px; align-items: center; }
+  .plan-card .check-list li { color: #3B4560; }
+
+  /* Price tag: blue block overlapping the bottom edge of the plan card */
+  .plan-price-tag {
+    position: absolute; left: 50%; bottom: -40px; transform: translateX(-50%);
+    background: linear-gradient(135deg, #5B8CFF, #2F6BFF);
+    color: #fff; border-radius: 14px; padding: 16px 32px 14px;
+    text-align: center; min-width: 220px; z-index: 2;
+    box-shadow: 0 16px 34px rgba(91,140,255,0.4);
+    transition: transform .3s ease, box-shadow .3s ease;
+  }
+  .plan-price-tag::after {
+    content: ''; position: absolute; inset: 0; border-radius: 14px;
+    background: linear-gradient(135deg, rgba(255,255,255,0.35) 0%, rgba(255,255,255,0) 45%);
+    pointer-events: none;
+  }
+  .plan-card:hover .plan-price-tag { transform: translateX(-50%) translateY(-4px); box-shadow: 0 20px 42px rgba(91,140,255,0.5); }
+
+  .discount-badge {
+    position: absolute; top: -11px; right: -10px; z-index: 3;
+    background: #0A0F1E; color: var(--lime); font-size: 10.5px; font-weight: 800;
+    padding: 4px 10px; border-radius: 99px; border: 1.5px solid var(--lime);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  }
+  .price-old { position: relative; font-size: 11.5px; font-weight: 600; opacity: .65; margin-bottom: 1px; }
+  .price-old s { text-decoration: line-through; }
+  .price-main { position: relative; display: flex; align-items: baseline; justify-content: center; gap: 1px; }
+  .price-currency { font-size: 17px; font-weight: 700; align-self: flex-start; margin-top: 6px; }
+  .price-integer { font-size: 44px; font-weight: 900; letter-spacing: -1px; line-height: 1; }
+  .price-decimal { font-size: 22px; font-weight: 800; }
+  .price-period { font-size: 13.5px; font-weight: 700; margin-left: 4px; opacity: .8; }
+  .plan-price-tag .plan-contract { position: relative; display: block; font-size: 10.5px; font-weight: 600; margin-top: 4px; opacity: .75; }
+
+  /* ── Objections / FAQ ── */
+  .faq-item { border-bottom: 1px solid var(--border); }
+  .faq-item:first-child { border-top: 1px solid var(--border); }
+  .faq-question {
+    width: 100%; background: none; border: none; text-align: left;
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 16px 4px; font-size: 14.5px; font-weight: 600; color: #fff;
+    cursor: pointer; gap: 12px; font-family: 'Poppins', sans-serif;
+  }
+  .faq-question { transition: background .25s ease, padding-left .25s ease, border-radius .25s ease; }
+  .faq-question:hover { background: rgba(47,107,255,0.08); padding-left: 10px; border-radius: 10px; }
+  .faq-icon { font-size: 20px; font-weight: 300; color: var(--blue-light); transition: transform .25s; flex-shrink: 0; }
+  .faq-question[aria-expanded="true"] .faq-icon { transform: rotate(45deg); }
+  .faq-answer { max-height: 0; overflow: hidden; transition: max-height .3s ease; }
+  .faq-answer p { font-size: 13.5px; color: var(--text-muted); padding: 0 4px 16px; }
+
+  /* ── Final CTA ── */
+  .final-cta {
+    text-align: center; padding: 44px 20px 50px;
+    background: radial-gradient(circle at 50% 0%, rgba(47,107,255,0.08), transparent 65%), #FFFFFF;
+  }
+  .final-cta h2 { margin-bottom: 12px; }
+  .final-cta p.lead { font-size: 14.5px; color: #3D4B6B; max-width: 440px; margin: 0 auto 26px; }
+
+  /* ── Interactive hover: lift + scan-line accent ── */
+  .problem-card, .flow-step, .feature-item, .profile-card, .compare-card, .plan-card {
+    transition: transform .3s ease, box-shadow .3s ease, border-color .3s ease;
+  }
+  .problem-card, .flow-step, .feature-item, .profile-card, .compare-card { overflow: hidden; }
+  .problem-card::before, .flow-step::before, .feature-item::before, .profile-card::before,
+  .compare-card::before, .plan-card::before {
+    content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px;
+    background: linear-gradient(90deg, var(--blue), var(--lime));
+    transform: scaleX(0); transform-origin: left; transition: transform .45s ease;
+  }
+  .plan-card::before { border-radius: 18px 18px 0 0; }
+  .feature-item::before { border-radius: 14px 14px 0 0; }
+  .problem-card:hover, .flow-step:hover, .feature-item:hover, .profile-card:hover,
+  .compare-card:hover, .plan-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--blue-light);
+    box-shadow: 0 18px 40px rgba(47,107,255,0.18);
+  }
+  .problem-card:hover::before, .flow-step:hover::before, .feature-item:hover::before,
+  .profile-card:hover::before, .compare-card:hover::before, .plan-card:hover::before {
+    transform: scaleX(1);
+  }
+  .plan-card.featured:hover { box-shadow: 0 0 0 1px var(--blue), 0 22px 48px rgba(47,107,255,0.28); }
+  .compare-card.compare-new:hover { box-shadow: 0 0 0 1px var(--lime), 0 22px 48px rgba(164,210,51,0.22); }
+
+  /* ── Scroll reveal ── */
+  .reveal { opacity: 0; transform: translateY(26px); transition: opacity .7s ease, transform .7s ease; }
+  .reveal.in-view { opacity: 1; transform: translateY(0); }
+
+  /* ── Footer ── */
+  footer { padding: 24px 20px 32px; text-align: center; }
+  footer p { font-size: 11.5px; color: #55628A; }
+
+  /* Sticky mobile WhatsApp bar */
+  .sticky-cta {
+    position: fixed; bottom: 0; left: 0; right: 0; z-index: 50;
+    background: var(--bg-alt); border-top: 1px solid var(--border);
+    padding: 12px 16px; display: none;
+  }
+  .sticky-cta .wrap { padding: 0; }
+  @media (max-width: 560px) {
+    .sticky-cta { display: block; }
+    body { padding-bottom: 76px; }
+  }
+
+  /* ── Small phones (≤380px) ── */
+  @media (max-width: 380px) {
+    .wrap { padding: 0 16px; }
+    h1 { font-size: 23px; }
+    .hero-sub { font-size: 14px; }
+    .hero-desc { font-size: 13px; }
+    h2 { font-size: 18px; }
+    .compare-value { font-size: 19px; }
+    .plan-price-tag { min-width: 0; width: 100%; max-width: 240px; padding: 14px 18px 12px; }
+    .price-integer { font-size: 36px; }
+    .price-decimal { font-size: 18px; }
+    .price-currency { font-size: 14px; }
+    .discount-badge { font-size: 9.5px; padding: 3px 8px; right: -6px; }
+    .video-wrap, .showcase-slide { border-radius: 12px; }
+  }
+</style>
+</head>
+<body>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap">
+      <span class="eyebrow">📍 Câmeras por Assinatura • Campo Bom/RS</span>
+      <h1>A primeira empresa de Campo Bom com <span class="accent">Câmeras por Assinatura</span>.</h1>
+      <p class="hero-sub">Segurança completa pra você e sua família sem nenhum investimento.</p>
+      <p class="hero-desc">Monitoramento 24 horas, Inteligência Artificial, aplicativo completo, sistema de alarme e manutenção inclusa em uma única mensalidade.</p>
+
+      <div class="pill-row">
+        <div class="pill"><span class="dot"></span>Sem investimento inicial</div>
+        <div class="pill"><span class="dot"></span>Inteligência Artificial</div>
+        <div class="pill"><span class="dot"></span>Monitoramento 24h por um humano</div>
+        <div class="pill"><span class="dot"></span>Manutenção inclusa</div>
+        <div class="pill"><span class="dot"></span>Sistema de Alarme</div>
+        <div class="pill"><span class="dot"></span>Monitore pelo seu celular</div>
+      </div>
+
+      <a class="btn-whatsapp" id="btnWhatsappHero" href="#planos" style="margin-top:24px;">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        Quero saber mais
+      </a>
+      <p class="hero-cta-note">Sem compromisso · Resposta rápida via WhatsApp</p>
+    </div>
+  </section>
+
+  <!-- PROBLEMA -->
+  <section class="section-alt">
+    <div class="wrap reveal">
+      <p class="kicker">O principal problema dos moradores…</p>
+      <h2>Hoje, para proteger sua casa ou empresa custa muito caro — e ainda assim deixa você no escuro.</h2>
+
+      <div class="problem-card">
+        <span class="tag tag-red">Se você não tem câmeras/alarme</span>
+        <h3>Investimento médio de R$3.000,00 só para começar e ter seu segurança na sua casa</h3>
+        <p>E depois da instalação, você fica sozinho:</p>
+        <ul>
+          <li>Compra de câmeras, DVR, central de alarme e sensores</li>
+          <li>Precisa chamar assistência quando algo dá errado</li>
+          <li>Paga manutenção e troca de equipamentos por conta própria</li>
+        </ul>
+      </div>
+
+      <div class="problem-card">
+        <span class="tag tag-amber">Quem já tem câmeras/alarme</span>
+        <h3>Câmeras que só gravam, mas não avisam nada</h3>
+        <p>Elas não têm inteligência: não identificam risco, não geram alerta. Na maioria das vezes, quando o cliente vai ver as imagens, o problema já aconteceu.</p>
+      </div>
+
+      <div class="problem-card">
+        <span class="tag tag-amber">quem tem o monitoramento tradicional</span>
+        <h3>Você paga mensalidade por uma simples placa</h3>
+        <p>Empresas de monitoramento tradicionais cobram mais de R$100 apenas pela famosa placa "Residência Monitorada" — e o cliente ainda precisa comprar todos os equipamentos por conta própria.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SOLUÇÃO / COMO FUNCIONA -->
+  <section>
+    <div class="wrap reveal">
+      <p class="kicker">A revolução da segurança eletrônica</p>
+      <h2>Assine a segurança da sua casa, assim como você assina internet ou streaming</h2>
+      <p class="section-desc">A Up Soluções instala uma câmera inteligente em comodato. O equipamento é nosso — você só usa enquanto assina. Sem que você precise investir valores altos em equipamento, apenas recebendo segurança todo mês!</p>
+
+      <div class="flow">
+        <div class="flow-step">
+          <div class="flow-num">1</div>
+          <div>
+            <h3>Câmera inteligente instalada</h3>
+            <p>Em comodato, sem custo de equipamento. A Up Soluções cuida de toda a instalação e configuração das melhores câmeras do mercado na sua casa ou empresa.</p>
+          </div>
+        </div>
+        <div class="flow-step">
+          <div class="flow-num">2</div>
+          <div>
+            <h3>Câmera identifica riscos com IA</h3>
+            <p>A Inteligência Artificial reconhece pessoas desconhecidas, movimentações fora do padrão, aberturas de portão/janela e tentativas de invasão — e gera um aviso automaticamente pra você e pra central de monitoramento.</p>
+          </div>
+        </div>
+        <div class="flow-step">
+          <div class="flow-num">3</div>
+          <div>
+            <h3>Disparo de Alarme</h3>
+            <p>A Inteligência Artificial reconhece eventos de risco e já dispara um alarme sonoro automaticamente tanto no local em que aconteceu o fato quanto no app do seu celular e também avisa a central de monitoramento.</p>
+          </div>
+        </div>
+        <div class="flow-step">
+          <div class="flow-num">4</div>
+          <div>
+            <h3>Tenha alguém monitorando 24h por dia</h3>
+            <p>Uma equipe humana da Central de Monitoramento analisa a ocorrência em tempo real e aciona os protocolos necessários, inclusive as autoridades policiais quando preciso.</p>
+          </div>
+        </div>
+        <div class="flow-step">
+          <div class="flow-num">5</div>
+          <div>
+            <h3>Você acompanha tudo pelo app</h3>
+            <p>Câmeras ao vivo, gravações de até 7 dias, notificações e controle de alarme em um único aplicativo Up Soluções — disponível na Play Store e na App Store.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CARROSSEL -->
+  <section class="section-alt">
+    <div class="wrap reveal">
+      <p class="kicker">Conheça por dentro</p>
+      <h2>Tecnologia que você vê funcionando</h2>
+      <div class="showcase-track" id="showcaseTrack">
+        <div class="showcase-slide"><img src="carrossel1.png" alt="Aplicativo Up Soluções com monitoramento em tempo real" /></div>
+        <div class="showcase-slide"><img src="carrossel2.png" alt="Câmera Up Soluções com Inteligência Artificial" /></div>
+        <div class="showcase-slide"><img src="carrossel3.png" alt="Central de Monitoramento 24h da Up Soluções" /></div>
+        <div class="showcase-slide"><img src="carrossel4.png" alt="Up Soluções, empresa nascida em Campo Bom, +10 anos de atividade e mais de 200 clientes ativos" /></div>
+        <div class="showcase-slide"><img src="carrossel5.png" alt="Sirene de alarme integrada com a Inteligência Artificial da câmera Up Soluções" /></div>
+      </div>
+      <div class="showcase-dots" id="showcaseDots"></div>
+    </div>
+  </section>
+
+  <!-- DIFERENCIAL -->
+  <section class="section-alt">
+    <div class="wrap reveal">
+      <p class="kicker">O grande diferencial</p>
+      <h2>De câmeras que apenas gravam para um sistema que age na hora</h2>
+      <div class="feature-grid">
+        <div class="feature-item"><div class="icon">01</div><p>Identifica riscos antes que virem problema</p></div>
+        <div class="feature-item"><div class="icon">02</div><p>Gera alertas automáticos com Inteligência Artificial</p></div>
+        <div class="feature-item"><div class="icon">03</div><p>Aciona uma Central de Monitoramento 24h</p></div>
+        <div class="feature-item"><div class="icon">04</div><p>Reduz o tempo de resposta em caso de ocorrência</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PERFIS DE CLIENTE -->
+  <section>
+    <div class="wrap reveal">
+      <p class="kicker">Feito para o seu caso</p>
+      <h2>Não importa se você já tem câmeras ou não</h2>
+
+      <div class="profile-card">
+        <span class="badge-num">❌ Perfil 1</span>
+        <h3>Ainda não tenho nenhum equipamento de segurança</h3>
+        <p style="font-size:13.5px;color:var(--text-muted);margin-bottom:12px;">Instalamos na sua casa:</p>
+        <ul class="check-list">
+          <li>Câmera em comodato</li>
+          <li>Inteligência Artificial</li>
+          <li>Aplicativo completo</li>
+          <li>Monitoramento 24 horas</li>
+          <li>Manutenção preventiva e corretiva</li>
+          <li>Suporte técnico e atualizações inclusas</li>
+        </ul>
+      </div>
+
+      <div class="profile-card">
+        <span class="badge-num">✅ Perfil 2</span>
+        <h3>Já tenho câmeras instaladas</h3>
+        <p style="font-size:13.5px;color:var(--text-muted);margin-bottom:12px;">A Up Soluções aproveita o que você já tem e fazemos:</p>
+        <ul class="check-list">
+          <li>Instalação apenas da Inteligência Artificial da nossa IA na sua câmera</li>
+          <li>Conexão do sistema à nossa Central de Monitoramento</li>
+          <li>Integração com o aplicativo Up Soluções</li>
+          <li>Suas câmeras atuais, agora ficam inteligentes</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMPARATIVO -->
+  <section class="section-alt">
+    <div class="wrap reveal">
+      <p class="kicker">Comparativo</p>
+      <h2>Por que investir alto se você pode ter o mesmo por menos de R$1,00 por dia...</h2>
+
+      <div class="compare-wrap">
+        <div class="compare-card">
+          <span class="compare-label">Instalação tradicional</span>
+          <div class="compare-value">R$ 3.000 em média</div>
+          <p class="compare-sub">Parcelado em 12x fica R$ 250,00 por mês — sem contar os juros da maquininha.</p>
+        </div>
+        <div class="compare-vs">VS</div>
+        <div class="compare-card compare-new">
+          <span class="compare-label">Assinatura Up Soluções</span>
+          <div class="compare-value">Até 10x mais barato por mês</div>
+          <p class="compare-sub">Sem comprar equipamento, sem instalação cara. Você paga uma mensalidade, com tudo incluso.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PLANOS -->
+  <section id="planos">
+    <div class="wrap reveal">
+      <p class="kicker">Planos</p>
+      <h2>Escolha o plano ideal para o seu momento</h2>
+
+      <div class="plan-card featured">
+        <span class="plan-badge">Mais procurado</span>
+        <div class="plan-name">Plano Essencial</div>
+        <div class="plan-for">Para quem ainda não possui câmeras</div>
+        <ul class="check-list">
+          <li>Equipamento incluso (comodato)</li>
+          <li>Inteligência Artificial</li>
+          <li>Aplicativo completo</li>
+          <li>Monitoramento 24h</li>
+          <li>Manutenção inclusa</li>
+        </ul>
+        <div class="plan-price-tag">
+          <span class="discount-badge">-84%</span>
+          <div class="price-main"><span class="price-currency">R$</span><span class="price-integer">39</span><span class="price-decimal">,90</span><span class="price-period">/mês</span></div>
+          <span class="plan-contract">Contrato mínimo de 24 meses</span>
+        </div>
+      </div>
+
+      <div class="plan-card">
+        <div class="plan-name">Plano Inteligência</div>
+        <div class="plan-for">Para quem já possui câmeras</div>
+        <ul class="check-list">
+          <li>Integração da Inteligência Artificial</li>
+          <li>Monitoramento 24h</li>
+          <li>Aplicativo completo</li>
+          <li>Manutenção inclusa</li>
+        </ul>
+        <div class="plan-price-tag">
+          <span class="discount-badge">-88%</span>
+          <div class="price-main"><span class="price-currency">R$</span><span class="price-integer">29</span><span class="price-decimal">,90</span><span class="price-period">/mês</span></div>
+          <span class="plan-contract">Contrato mínimo de 24 meses</span>
+        </div>
+      </div>
+
+      <p style="text-align:center;font-size:12.5px;color:var(--text-muted);margin-bottom:20px;">Valores personalizados conforme o número de câmeras e o local. Fale com nossa equipe para sua proposta.</p>
+
+      <a class="btn-whatsapp" id="btnWhatsappPlanos" href="#" target="_blank" rel="noopener noreferrer">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        Quero Contratar
+      </a>
+    </div>
+  </section>
+
+  <!-- APRESENTAÇÃO DA EMPRESA -->
+  <section class="section-alt">
+    <div class="wrap reveal">
+      <p class="kicker">Quem somos</p>
+      <h2>Uma empresa consolidada em Campo Bom, com uma nova forma de proteger você</h2>
+      <p class="section-desc">A Up Soluções é uma empresa de segurança eletrônica consolidada em Campo Bom/RS, atuando há anos com instalação e manutenção de sistemas de segurança — câmeras, alarmes, cercas elétricas, motores para portões e controles de acesso. Ao longo desse tempo, construímos uma carteira sólida de clientes, atendendo residências de alto padrão, empresas, indústrias e condomínios da região.</p>
+      <div class="video-wrap">
+        <iframe src="https://www.youtube.com/embed/vKkn4egSgBw" title="Up Soluções" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- OBJEÇÕES / FAQ -->
+  <section>
+    <div class="wrap reveal">
+      <p class="kicker">Perguntas frequentes</p>
+      <h2>Tire suas dúvidas</h2>
+      <div class="faq-list">
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">Preciso comprar equipamentos?<span class="faq-icon">+</span></button>
+          <div class="faq-answer"><p>Não. A câmera fica em comodato — o equipamento é da Up Soluções enquanto você mantiver a assinatura.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">Preciso investir milhares de reais?<span class="faq-icon">+</span></button>
+          <div class="faq-answer"><p>Não. Você paga apenas uma mensalidade, sem investimento inicial elevado.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">Se der problema no equipamento, quem resolve?<span class="faq-icon">+</span></button>
+          <div class="faq-answer"><p>A Up Soluções. Manutenção preventiva, corretiva e suporte técnico já estão inclusos na assinatura.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">Preciso contratar manutenção separada?<span class="faq-icon">+</span></button>
+          <div class="faq-answer"><p>Não. A manutenção já está inclusa em todos os planos.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">Preciso comprar DVR ou central de alarme?<span class="faq-icon">+</span></button>
+          <div class="faq-answer"><p>Não. Dependendo do projeto, a inteligência da câmera reduz a necessidade de equipamentos tradicionais.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">Já tenho câmeras, preciso trocar tudo?<span class="faq-icon">+</span></button>
+          <div class="faq-answer"><p>Não necessariamente. Em muitos casos é possível aproveitar a estrutura que você já tem e apenas adicionar a Inteligência Artificial e o monitoramento.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA FINAL + FORM -->
+  <section class="final-cta">
+    <div class="wrap reveal">
+      <p class="kicker">Comece agora</p>
+      <h2>Mais tecnologia. Mais tranquilidade. Mais proteção.</h2>
+      <p class="lead">Conheça a primeira solução de Câmeras por Assinatura de Campo Bom e descubra como proteger sua casa ou empresa sem investir milhares de reais em equipamentos.</p>
+
+      <a class="btn-whatsapp" id="btnWhatsappFinal" href="#planos">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        Solicitar avaliação gratuita
+      </a>
+    </div>
+  </section>
+
+  <footer>
+    <div class="wrap">
+      <p>Up Soluções — Segurança Eletrônica · Campo Bom/RS</p>
+    </div>
+  </footer>
+
+  <div class="sticky-cta">
+    <div class="wrap">
+      <a class="btn-whatsapp" id="btnWhatsappSticky" href="#planos" style="padding:13px;font-size:14px;">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        Falar no WhatsApp
+      </a>
+    </div>
+  </div>
+
+  <script>
+    // ── CONFIGURAÇÃO: troque pelos dados reais da Up Soluções ──
+    var WHATSAPP_NUMERO = '555199377814'; // formato: 55 + DDD + número
+    var WHATSAPP_MSG = 'Olá! Tenho interesse em conhecer as Câmeras por Assinatura da Up Soluções.';
+
+    var waLink = 'https://wa.me/' + WHATSAPP_NUMERO + '?text=' + encodeURIComponent(WHATSAPP_MSG);
+    var btnPlanos = document.getElementById('btnWhatsappPlanos');
+    if (btnPlanos) {
+      btnPlanos.href = waLink;
+      btnPlanos.addEventListener('click', function() {
+        var eventId = gerarEventId();
+        fbq('track', 'Contact', {}, { eventID: eventId });
+      });
+    }
+
+    function gerarEventId() {
+      return 'evt_' + Date.now() + '_' + Math.random().toString(36).substring(2, 10);
+    }
+
+    // Showcase carousel
+    (function() {
+      var track = document.getElementById('showcaseTrack');
+      var dotsContainer = document.getElementById('showcaseDots');
+      var slides = track.children;
+      var total = slides.length;
+      if (total <= 1) return;
+      var current = 0;
+
+      for (var i = 0; i < total; i++) {
+        var dot = document.createElement('div');
+        dot.className = 'dot' + (i === 0 ? ' active' : '');
+        dotsContainer.appendChild(dot);
+      }
+
+      function goTo(index) {
+        current = index;
+        track.scrollTo({ left: current * track.clientWidth, behavior: 'smooth' });
+        var dots = dotsContainer.querySelectorAll('.dot');
+        dots.forEach(function(d, i) { d.classList.toggle('active', i === current); });
+      }
+
+      setInterval(function() {
+        goTo(current >= total - 1 ? 0 : current + 1);
+      }, 3500);
+    })();
+
+    // Scroll reveal
+    (function() {
+      var els = document.querySelectorAll('.reveal');
+      if (!('IntersectionObserver' in window)) {
+        els.forEach(function(el) { el.classList.add('in-view'); });
+        return;
+      }
+      var obs = new IntersectionObserver(function(entries) {
+        entries.forEach(function(entry) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('in-view');
+            obs.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.15 });
+      els.forEach(function(el) { obs.observe(el); });
+    })();
+
+    // FAQ accordion
+    document.querySelectorAll('.faq-question').forEach(function(btn) {
+      btn.addEventListener('click', function() {
+        var expanded = this.getAttribute('aria-expanded') === 'true';
+        document.querySelectorAll('.faq-question').forEach(function(b) {
+          b.setAttribute('aria-expanded', 'false');
+          b.nextElementSibling.style.maxHeight = '0';
+        });
+        if (!expanded) {
+          this.setAttribute('aria-expanded', 'true');
+          this.nextElementSibling.style.maxHeight = this.nextElementSibling.scrollHeight + 'px';
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>
